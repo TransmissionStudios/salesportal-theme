@@ -1,0 +1,11 @@
+name: Sales Portal
+type: theme
+description: 'Sales Portal theme'
+package: Custom
+core: 8.x
+
+regions:
+  header: Header
+  navigation: 'Navigation'
+  content: Content
+  footer: Footer
