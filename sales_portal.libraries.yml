@@ -1,0 +1,21 @@
+# Naver responsive nav.
+naver:
+  version: 1.x
+  css:
+    theme:
+      bower_components/Naver/jquery.fs.naver.min.css: {}
+  js:
+    bower_components/Naver/jquery.fs.naver.min.js: {}
+  dependencies:
+    - core/jquery
+
+# Standard across site.
+base:
+  version: 1.x
+  css:
+    theme:
+      css/base.css: {}
+  js:
+    js/scripts.js: {}
+  dependencies:
+    - core/jquery

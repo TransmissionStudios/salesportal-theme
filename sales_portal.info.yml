@@ -4,6 +4,10 @@ description: 'Sales Portal theme'
 package: Custom
 core: 8.x
 
+libraries:
+  - sales_portal/naver
+  - sales_portal/base
+
 regions:
   header: Header
   navigation: 'Navigation'
