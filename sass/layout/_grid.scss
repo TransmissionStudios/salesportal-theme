@@ -1,0 +1,14 @@
+// Susy.
+@import "../../bower_components/susy/sass/susy";
+
+// Breakpoint.
+@import "../../bower_components/breakpoint-sass/stylesheets/breakpoint";
+
+// Susy settings.
+$susy: (
+  columns: 12,
+  gutters: .25,
+  gutter-position: inside,
+  math: fluid,
+  output: isolate,
+);

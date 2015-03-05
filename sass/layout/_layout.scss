@@ -1,0 +1,38 @@
+body {
+  font-size: 0.8em;
+//  font-family: $font-body;
+  line-height: 1.5;
+}
+
+.layout-container {
+  @include container(80em);
+}
+
+header {
+//  @include span(12 of 12);
+//  border: 1px solid $red;
+}
+
+main {
+//  @include span(12 of 12);
+//  border: 1px solid $red;
+}
+
+article {
+  @include span(8 of 12);
+  border: 1px solid $red;
+}
+
+aside {
+  @include span(4 of 12);
+  border: 1px solid $blue;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  clear: both;
+}
