@@ -4,10 +4,10 @@
 // Breakpoint.
 @import "../../bower_components/breakpoint-sass/stylesheets/breakpoint";
 
-// Susy settings.
+// Susy global settings.
 $susy: (
   columns: 12,
-  gutters: .25,
+  gutters: 1,
   gutter-position: inside,
   math: fluid,
   output: isolate,
