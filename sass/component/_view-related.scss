@@ -1,0 +1,32 @@
+/*doc
+---
+title: View Related Sidebar
+name: view-related-sidebar
+category: Components
+---
+
+To be used when
+
+```html_example
+<div class="view-related">
+  <div class="field">
+    <div class="field-label">Sectors</div>
+      <div class="field-items">
+        <div class="field-item"><a href="#git">Enterprise</a></div>
+        <div class="field-item"><a href="#">Government</a></div>
+      </div>
+  </div>
+</div>
+```
+
+*/
+
+.view-related .field {
+  margin-bottom: 1em;
+  margin-top: 30px;
+
+  .field-label {
+    font-size: $fs-1;
+    color: $col-brand-1;
+  }
+}
