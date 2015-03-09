@@ -1,9 +1,17 @@
 // Base.
+@import "base/normalize";
 @import "base/variables";
+@import "base/mixins";
 
 // Layout.
 @import "layout/grid";
 @import "layout/layout";
 
 // Component.
+@import "component/case-study";
 @import "component/view-related";
+
+// Skin.
+@import "skin/header";
+
+// State.

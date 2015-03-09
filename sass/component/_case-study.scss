@@ -1,0 +1,27 @@
+.contact-info span {
+  display: inline-block;
+}
+
+
+// Case study view.
+.view-case-studies {
+  .view-content {
+    @include container();
+    @include susy-clearfix();
+
+    .views-row {
+      @include span(12);
+    }
+  }
+}
+
+// Medium.
+@include breakpoint($medium) {
+  .view-case-studies {
+    .view-content {
+      .views-row {
+        @include span(4);
+      }
+    }
+  }
+}

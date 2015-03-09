@@ -11,22 +11,41 @@ To be used when
 <div class="view-related">
   <div class="field">
     <div class="field-label">Sectors</div>
-      <div class="field-items">
-        <div class="field-item"><a href="#git">Enterprise</a></div>
-        <div class="field-item"><a href="#">Government</a></div>
-      </div>
+    <div class="field-items">
+      <div class="field-item"><a href="#">Enterprise</a></div>
+      <div class="field-item"><a href="#">Government</a></div>
+    </div>
+    <div class="field-label">Technologies</div>
+    <div class="field-items">
+      <div class="field-item"><a href="#">Responsive Web Design</a></div>
+      <div class="field-item"><a href="#">Java</a></div>
+    </div>
   </div>
 </div>
 ```
 
 */
 
-.view-related .field {
-  margin-bottom: 1em;
-  margin-top: 30px;
+.view-related {
+  .field {
+    margin-bottom: 1em;
 
-  .field-label {
-    font-size: $fs-1;
-    color: $col-brand-1;
+    .field-label {
+      font-size: $fs-1;
+      color: $col-brand-1;
+    }
+
+    &:first-child {
+      margin-top: 1em;
+    }
+  }
+}
+
+// Medium.
+@include breakpoint($medium) {
+  .view-related {
+    .field:first-child {
+      margin-top: 1.2em;
+    }
   }
 }

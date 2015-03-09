@@ -79,35 +79,41 @@ not node.isPublished() ? 'node--unpublished',
 view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 ]
 %}
-<article{{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
-  {% if not page %}
+{# If teaser #}
+{% if not page %}
+  <article{{ attributes.addClass(classes) }}>
+    {{ content.field_case_study_hero_image }}
+    {{ title_prefix }}
     <h2{{ title_attributes }}>
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
     </h2>
-  {% endif %}
-  {{ title_suffix }}
-  {{ date }}
+    {{ title_suffix }}
+    {{ content.body }}
+  </article>
 
-  {% if display_submitted %}
-    <footer class="node__meta">
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('node__submitted') }}>
-        {% trans %}Submitted by {{ author_name|passthrough }} on {{ date|passthrough }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
+{% else %}
+  {# If full view #}
+  <header>
+    {{ content.field_case_study_hero_image }}
+  </header>
+  <article{{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+      <h2{{ title_attributes }}>
+        {{ label }}
+      </h2>
+    {{ title_suffix }}
+    {{ date }}
+    {{ content.body }}
 
-  {{ content.body }}
-  {% trans %}For more information, contact{% endtrans %} {{ content.field_case_study_contact }}
+    <div class="contact-info">
+      <span>{% trans %}For more information, contact{% endtrans %}</span>
+      <span>{{ content.field_case_study_contact }}</span>
+    </div>
+  </article>
 
-</article>
-
-<aside class="view-related">
-
-  {{ content.field_case_study_sectors }}
-  {{ content.field_case_study_technologies }}
-
-</aside>
+  <aside class="view-related">
+    {{ content.field_case_study_sectors }}
+    {{ content.field_case_study_technologies }}
+  </aside>
+{% endif %}

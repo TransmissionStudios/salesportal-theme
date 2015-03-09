@@ -1,7 +1,6 @@
 // Colours.
-$red: red;
+$black: #000;
 $blue: blue;
-
 $cap-blue: #00a1d5;
 
 // Fonts.
@@ -12,10 +11,9 @@ $fs-1: 110%;
 
 // Proxies.
 $font-body: $verdana;
-$col-brand-1: $cap-blue;
+$col-brand-1: $black;
 
 // Breakpoints.
 $small: 20em;
 $medium: 48em;
 $large: 64em;
-

@@ -8,7 +8,8 @@
 $susy: (
   columns: 12,
   gutters: 1,
-  gutter-position: inside,
+  gutter-position: after,
   math: fluid,
   output: isolate,
+  global-box-sizing: border-box,
 );

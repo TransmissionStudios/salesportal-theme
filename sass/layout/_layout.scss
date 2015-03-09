@@ -6,26 +6,21 @@ body {
 
 .layout-container {
   @include container(80em);
+  padding: 0 5%;
 }
 
 header {
-//  @include span(12 of 12);
-//  border: 1px solid $red;
 }
 
 main {
-//  @include span(12 of 12);
-//  border: 1px solid $red;
 }
 
 article {
-  @include span(8 of 12 first);
-  border: 1px solid $red;
+  @include span(12);
 }
 
 aside {
-  @include span(4 of 12 last);
-  border: 1px solid $blue;
+  @include span(12);
 }
 
 img {
@@ -34,5 +29,23 @@ img {
 }
 
 footer {
-  clear: both;
+  @include full();
+}
+
+// Medium.
+@include breakpoint($medium) {
+  article {
+    @include span(8 first);
+  }
+
+  aside {
+    @include span(4 last);
+  }
+}
+
+// Large
+@include breakpoint($large) {
+  .layout-container {
+    padding: 0;
+  }
 }
