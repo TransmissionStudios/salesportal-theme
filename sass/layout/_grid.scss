@@ -12,4 +12,10 @@ $susy: (
   math: fluid,
   output: isolate,
   global-box-sizing: border-box,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
 );

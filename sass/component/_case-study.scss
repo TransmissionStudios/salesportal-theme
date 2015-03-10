@@ -1,27 +1,43 @@
+// Node.
 .contact-info span {
   display: inline-block;
 }
 
-
 // Case study view.
 .view-case-studies {
-  .view-content {
-    @include container();
-    @include susy-clearfix();
+  .views-row {
+    margin-bottom: 2em;
+  }
+}
 
+
+// Medium.
+@include breakpoint($medium) {
+  // Node.
+  .node--type-case-study {
+    article {
+      @include span(8 first);
+    }
+
+    aside {
+      @include span(4 last);
+    }
+  }
+
+  // Case study view.
+  .view-case-studies {
     .views-row {
-      @include span(12);
+      @include gallery(6 of 12);
     }
   }
 }
 
-// Medium.
-@include breakpoint($medium) {
+// Large.
+@include breakpoint($large) {
+  // Case study view.
   .view-case-studies {
-    .view-content {
-      .views-row {
-        @include span(4);
-      }
+    .views-row {
+      @include gallery(4 of 12);
     }
   }
 }

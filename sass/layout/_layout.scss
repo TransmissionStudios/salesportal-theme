@@ -1,26 +1,43 @@
 body {
-  font-size: 0.8em;
+  font-size: 1em;
   font-family: $font-body;
   line-height: 1.5;
 }
 
 .layout-container {
-  @include container(80em);
+  @include container($x-large);
   padding: 0 5%;
 }
 
-header {
+header[role="banner"] {
+  font-size: 75%;
+
+  // Site logo.
+  img {
+    @include span(8);
+    margin-top: 1em;
+  }
+}
+
+.region-navigation {
+  @include full();
+  margin: 1em 0;
 }
 
 main {
+  clear: both;
+  font-size: 75%;
+}
+
+footer {
+  @include full();
+  font-size: 75%;
 }
 
 article {
-  @include span(12);
 }
 
 aside {
-  @include span(12);
 }
 
 img {
@@ -28,23 +45,40 @@ img {
   height: auto;
 }
 
-footer {
-  @include full();
-}
-
 // Medium.
 @include breakpoint($medium) {
-  article {
-    @include span(8 first);
+  .layout-container {
+    padding: 0 2%;
   }
 
-  aside {
-    @include span(4 last);
+  header[role="banner"] {
+    img {
+      @include span(4);
+    }
+  }
+
+  .region-navigation {
+    @include span(8 last);
+    position: relative;
+    top: -4em;
   }
 }
 
-// Large
+// Large.
 @include breakpoint($large) {
+  header[role="banner"] {
+    img {
+      @include span(3);
+    }
+  }
+
+  .region-navigation {
+    @include span(9 last);
+  }
+}
+
+// Extra Large.
+@include breakpoint($x-large) {
   .layout-container {
     padding: 0;
   }
