@@ -1,3 +1,168 @@
+/*doc
+ ---
+ title: Case study (teaser)
+ name: case-study-teaser
+ category: Components
+---
+
+Teaser
+
+```html_example
+<div class="view-case-studies">
+	<div class="views-row">
+		<article>
+		  <div data-quickedit-field-id="node/10/field_case_study_hero_image/en/teaser" class="field field-node--field-case-study-hero-image field-name-field-case-study-hero-image field-type-image field-label-hidden">
+		    <div class="field-items">
+          <div class="field-item">
+            <img src="http://localhost:8887/sales-portal/sites/default/files/case_study/generateImage_kW4Jxd.png" width="209" height="106" alt="" typeof="foaf:Image">
+          </div>
+      	</div>
+			</div>
+			<h2>
+	      <a href="/sales-portal/node-10-case_study" rel="bookmark">
+					<span data-quickedit-field-id="node/10/title/en/teaser" class="field field-node--title field-name-title field-type-string field-label-hidden">Pneum Sit Vereor</span>
+				</a>
+    	</h2>
+	    <div data-quickedit-field-id="node/10/body/en/teaser" class="clearfix field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
+	    	<div class="field-items">
+	      	<div class="field-item">
+	      		<p>Jumentum luptatum praemitto quidne.</p>
+					</div>
+	      </div>
+			</div>
+		</article>
+	</div>
+		<div class="views-row">
+		<article>
+		  <div data-quickedit-field-id="node/10/field_case_study_hero_image/en/teaser" class="field field-node--field-case-study-hero-image field-name-field-case-study-hero-image field-type-image field-label-hidden">
+		    <div class="field-items">
+          <div class="field-item">
+            <img src="http://localhost:8887/sales-portal/sites/default/files/case_study/generateImage_kW4Jxd.png" width="209" height="106" alt="" typeof="foaf:Image">
+          </div>
+      	</div>
+			</div>
+			<h2>
+	      <a href="/sales-portal/node-10-case_study" rel="bookmark">
+					<span data-quickedit-field-id="node/10/title/en/teaser" class="field field-node--title field-name-title field-type-string field-label-hidden">Pneum Sit Vereor</span>
+				</a>
+    	</h2>
+	    <div data-quickedit-field-id="node/10/body/en/teaser" class="clearfix field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
+	    	<div class="field-items">
+	      	<div class="field-item">
+	      		<p>Jumentum luptatum praemitto quidne.</p>
+					</div>
+	      </div>
+			</div>
+		</article>
+	</div>
+	<div class="views-row">
+		<article>
+		  <div data-quickedit-field-id="node/10/field_case_study_hero_image/en/teaser" class="field field-node--field-case-study-hero-image field-name-field-case-study-hero-image field-type-image field-label-hidden">
+		    <div class="field-items">
+          <div class="field-item">
+            <img src="http://localhost:8887/sales-portal/sites/default/files/case_study/generateImage_kW4Jxd.png" width="209" height="106" alt="" typeof="foaf:Image">
+          </div>
+      	</div>
+			</div>
+			<h2>
+	      <a href="/sales-portal/node-10-case_study" rel="bookmark">
+					<span data-quickedit-field-id="node/10/title/en/teaser" class="field field-node--title field-name-title field-type-string field-label-hidden">Pneum Sit Vereor</span>
+				</a>
+    	</h2>
+	    <div data-quickedit-field-id="node/10/body/en/teaser" class="clearfix field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
+	    	<div class="field-items">
+	      	<div class="field-item">
+	      		<p>Jumentum luptatum praemitto quidne.</p>
+					</div>
+	      </div>
+			</div>
+		</article>
+	</div>
+</div>
+```
+
+*/
+
+/*doc
+---
+title: Case Study (page)
+name: case-study-page
+category: Components
+---
+
+Page
+
+```html_example
+<div class="node--type-case-study">
+	<main class="main">
+		<div class="layout-content">
+			<div class="region-content">
+				<header>
+					<div data-quickedit-field-id="node/3/field_case_study_hero_image/en/full" class="field field-node--field-case-study-hero-image field-name-field-case-study-hero-image field-type-image field-label-hidden">
+				    <div class="field-items">
+				      <div class="field-item">
+								<img src="http://localhost:8887/sales-portal/sites/default/files/case_study/eurostar-hero_0.jpg" width="1280" height="470" alt="" typeof="foaf:Image">
+							</div>
+	      		</div>
+					</div>
+				</header>
+				<article data-history-node-id="3" data-quickedit-entity-id="node/3" role="article" class="contextual-region node node--type-case-study node--promoted node--view-mode-full" about="/sales-portal/eurostar-responsive-microsite">
+	      	<h2>
+						<span data-quickedit-field-id="node/3/title/en/full" class="field field-node--title field-name-title field-type-string field-label-hidden">Eurostar 20th anniversary site</span>
+	      	</h2>
+	    		<div data-contextual-id="node:node=3:changed=1425917546"></div>
+					<span data-quickedit-field-id="node/3/created/en/full" class="field field-node--created field-name-created field-type-created field-label-hidden">03/04/2015</span>
+					<div data-quickedit-field-id="node/3/body/en/full" class="clearfix field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
+		    		<div class="field-items">
+		          <div class="field-item"><p><strong>Brief</strong><br>
+								To provide a responsive content managed microsite, promoting the 20th Anniversary of Eurostar, to launch in conjunction with extensive Above The Line promotion and publishable in multiple languages.<br>
+								&nbsp;<br>
+								<strong>Additional benefits of site</strong></p>
+								<ul>
+								<li>To prove that Eurostar/Capgemini had the capability to create event sites inhouse without incurring the time and expense of engaging an external agency each time.</li>
+								<li>To create a reusable template for adding new microsites in the future.</li>
+								<li>To act as a proof of concept for a future responsive redesign and rebuild of the main website. The client would be exposed to the increased content strategy and design requirements and the development team would introduce some modern tools and techniques.</li>
+								</ul>
+							</div>
+	      		</div>
+					</div>
+	    	<div class="contact-info">
+	      	<span>For more information, contact</span>
+	     		<span><div data-quickedit-field-id="node/3/field_case_study_contact/en/full" class="field field-node--field-case-study-contact field-name-field-case-study-contact field-type-entity-reference field-label-hidden">
+	    <div class="field-items">
+	          <div class="field-item"><a href="/sales-portal/richard-mcmenamin">Richard McMenamin</a></div>
+	      </div>
+	</div>
+
+
+	</span>
+	    </div>
+	  </article>
+
+	  <aside class="view-related">
+			<div data-quickedit-field-id="node/3/field_case_study_sectors/en/full" class="field field-node--field-case-study-sectors field-name-field-case-study-sectors field-type-taxonomy-term-reference field-label-above">
+	      <div class="field-label">Sectors</div>
+	    	<div class="field-items">
+	        <div class="field-item"><a href="/sales-portal/taxonomy/term/1">Enterprise</a></div>
+	      </div>
+			</div>
+			<div data-quickedit-field-id="node/3/field_case_study_technologies/en/full" class="field field-node--field-case-study-technologies field-name-field-case-study-technologies field-type-entity-reference field-label-above">
+	    	<div class="field-label">Technologies</div>
+	  		<div class="field-items">
+	        <div class="field-item"><a href="/sales-portal/responsive-web-design">Responsive Web Design</a></div>
+	    	</div>
+			</div>
+	  </aside>
+
+
+			</div>
+		</div>
+	</main>
+</div>
+```
+*/
+
+
 // Node.
 .contact-info span {
   display: inline-block;
