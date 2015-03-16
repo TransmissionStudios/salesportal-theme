@@ -162,19 +162,34 @@ Page
 ```
 */
 
-
 // Node.
 .contact-info span {
   display: inline-block;
 }
 
 // Case study view.
-.view-case-studies {
+.view-case-studies,
+.view-taxonomy-term {
   .views-row {
     margin-bottom: 2em;
   }
 }
 
+.field-node--field-case-study-sectors,
+.field-node--field-case-study-technologies {
+  .field-items,
+  .field-item {
+    display: inline;
+
+    &:after {
+      content: ',';
+    }
+
+    &:last-child:after {
+      content: '';
+    }
+  }
+}
 
 // Medium.
 @include breakpoint($medium) {
@@ -190,9 +205,10 @@ Page
   }
 
   // Case study view.
-  .view-case-studies {
+  .view-case-studies,
+  .view-taxonomy-term {
     .views-row {
-      @include gallery(6 of 12);
+      @include gallery(6);
     }
   }
 }
@@ -200,9 +216,10 @@ Page
 // Large.
 @include breakpoint($large) {
   // Case study view.
-  .view-case-studies {
+  .view-case-studies,
+  .view-taxonomy-term {
     .views-row {
-      @include gallery(4 of 12);
+      @include gallery(4);
     }
   }
 }

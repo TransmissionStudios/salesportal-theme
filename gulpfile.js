@@ -1,3 +1,5 @@
+'use strict';
+
 // Gulp requires.
 var gulp = require('gulp'),
   $ = require('gulp-load-plugins'),

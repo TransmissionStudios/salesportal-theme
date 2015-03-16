@@ -52,34 +52,47 @@ img {
   }
 
   header[role="banner"] {
-    img {
-      @include span(4);
-    }
+    @include span(4);
   }
 
   .region-navigation {
-    @include span(8 last);
+    @include span(8 last nest);
     position: relative;
     top: -4em;
+
+    nav {
+      ul.menu {
+        @include full();
+      }
+    }
+
+    .search-block-form {
+      @include full();
+    }
   }
 }
 
 // Large.
 @include breakpoint($large) {
   header[role="banner"] {
-    img {
-      @include span(3);
-    }
+    @include span(4);
   }
 
   .region-navigation {
-    @include span(9 last);
-  }
-}
+    @include span(8 last nest);
+    position: relative;
+    top: -3em;
 
-// Extra Large.
-@include breakpoint($x-large) {
-  .layout-container {
-    padding: 0;
+    nav {
+      ul.menu {
+        @include span(5 first);
+      }
+    }
+
+    .search-block-form {
+      @include span(3 last);
+      position: relative;
+      top: -3em;
+    }
   }
 }

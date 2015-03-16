@@ -10,14 +10,13 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "singularity": "~1.4.0",
-    "susy": "master",
+  "devDependencies": {
     "Naver": "~3.1.2",
     "normalize.css": "~3.0.2",
     "jquery-waypoints": "~2.0.5"
-  },
-  "devDependencies": {
-    "Cortana": "~1.2.8"
+    "susy": "master",
+    "Cortana": "~1.2.8",
+    "breakpoint-sass": "~2.5.0",
+    "sassy-maps": "~0.4.0"
   }
 }
