@@ -11,25 +11,26 @@
 
 // Medium.
 @include breakpoint($medium) {
-  .contact_profile {
-  }
+  .node--type-contact {
+    .field-name-field-contact-image {
+      @include span(2);
+    }
 
-  .field-name-field-contact-image {
-    @include span(2);
-  }
+    .field-name-body {
+      @include span(9);
 
-  .field-name-body {
-    @include span(9);
-
-    p:first-child {
-      margin-top: 0;
+      p:first-child {
+        margin-top: 0;
+      }
     }
   }
 }
 
 // Large.
 @include breakpoint($large) {
-  .field-name-body {
-    @include span(6);
+  .node--type-contact {
+    .field-name-body {
+      @include span(6);
+    }
   }
 }
