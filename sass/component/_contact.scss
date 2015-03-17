@@ -1,0 +1,35 @@
+.node--type-contact {
+  h1 {
+    margin-bottom: 0;
+  }
+}
+
+.field-name-field-contact-job-title {
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+
+// Medium.
+@include breakpoint($medium) {
+  .contact_profile {
+  }
+
+  .field-name-field-contact-image {
+    @include span(2);
+  }
+
+  .field-name-body {
+    @include span(9);
+
+    p:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+// Large.
+@include breakpoint($large) {
+  .field-name-body {
+    @include span(6);
+  }
+}
